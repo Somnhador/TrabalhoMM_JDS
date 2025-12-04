@@ -15,7 +15,7 @@ public class JogoDaSenha {
         int[] senha = new int[senhaTamanho];
         int[] tentativa = new int[senhaTamanho];
         
-        boolean venceu = false;
+        boolean ganhou = false;
         
         for (int i = 0; i < senhaTamanho; i++) {
 
@@ -63,7 +63,7 @@ public class JogoDaSenha {
             }
 
             if (digitosCorretos == senhaTamanho) {
-                venceu = true;
+                ganhou = true;
 
                 break;
             }
@@ -92,7 +92,7 @@ public class JogoDaSenha {
         }
 
         System.out.println("\n--------------------------------------------------");
-        if (venceu) {
+        if (ganhou) {
             System.out.println("\nPARABÉNS! VOCÊ GANHOU!");
         } else {
             System.out.println("\nSuas tentativas acabaram.");
@@ -101,4 +101,5 @@ public class JogoDaSenha {
         
         sc.close();
     }
+
 }
